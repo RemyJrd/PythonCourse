@@ -1,11 +1,5 @@
 import random
 
-class Question:
-    def __init__(self, question, choices, answer):
-        self.question = question
-        self.choices = choices
-        self.answer = answer
-
 class Quiz:
     def __init__(self, questions):
         self.questions = questions
@@ -50,19 +44,3 @@ class Quiz:
         print("Correct answers:")
         for i, question in enumerate(self.questions):
             print(f"{i + 1}. {question.answer}")
-
-if __name__ == "__main__":
-    questions = [
-        Question("What is the capital of France?", ["Paris", "London", "Berlin"], "Paris"),
-        Question("What is the largest planet in our solar system?", ["Jupiter", "Saturn", "Neptune"], "Jupiter"),
-        Question("What is the smallest country in the world?", ["Monaco", "Vatican City", "San Marino"], "Vatican City"),
-        Question("What is the highest mountain in the world?", ["Mount Everest", "K2", "Kangchenjunga"], "Mount Everest"),
-        Question("What is the largest ocean in the world?", ["Atlantic Ocean", "Indian Ocean", "Pacific Ocean"], "Pacific Ocean"),
-        Question("What is the smallest continent in the world?", ["Europe", "Australia", "South America"], "Australia"),
-        Question("What is the largest country in the world by area?", ["Russia", "Canada", "China"], "Russia"),
-        Question("What is the hottest planet in our solar system?", ["Venus", "Mercury", "Mars"], "Venus"),
-        Question("What is the longest river in the world?", ["Nile", "Amazon", "Yangtze"], "Nile"),
-        Question("What is the largest mammal in the world?", ["Elephant", "Blue Whale", "Giraffe"], "Blue Whale")
-    ]
-    quiz = Quiz(questions)
-    quiz.run_quiz()
