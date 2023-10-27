@@ -21,3 +21,6 @@ class TestPasswdgen(unittest.TestCase):
         self.assertIn("entropy", output)
 
         self.assertEqual(len(output.split(":")[1].strip()), expected_length)
+
+if __name__ == '__main__':
+    unittest.main()
