@@ -30,5 +30,5 @@ In this project, the goal is to create a password. You can also verify a given p
 
 ### Test
 the program can automatically test itself. 
-The test ______________
+The test ensure that the password generator gives you the asked amount of characters (Also broken)
 
